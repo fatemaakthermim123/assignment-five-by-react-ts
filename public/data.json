@@ -7,7 +7,10 @@
     "category": "Frontend",
     "level": "Beginner-Friendly",
     "rating": 4.9,
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    "tagBg": "bg-sky-50",
+    "tagText": "text-sky-600",
+    "tagBorder": "border-sky-200"
   },
   {
     "id": 2,
@@ -17,7 +20,10 @@
     "category": "Frontend",
     "level": "Beginner-Friendly",
     "rating": 4.8,
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    "tagBg": "bg-emerald-50",
+    "tagText": "text-emerald-600",
+    "tagBorder": "border-emerald-200"
   },
   {
     "id": 3,
@@ -27,7 +33,10 @@
     "category": "Frontend",
     "level": "Intermediate",
     "rating": 4.8,
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
+    "tagBg": "bg-orange-50",
+    "tagText": "text-orange-600",
+    "tagBorder": "border-orange-200"
   },
   {
     "id": 4,
@@ -37,7 +46,10 @@
     "category": "Frontend",
     "level": "Intermediate",
     "rating": 4.9,
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    "tagBg": "bg-violet-50",
+    "tagText": "text-violet-600",
+    "tagBorder": "border-violet-200"
   },
   {
     "id": 5,
@@ -47,7 +59,10 @@
     "category": "Backend",
     "level": "Intermediate",
     "rating": 4.8,
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "tagBg": "bg-green-50",
+    "tagText": "text-green-600",
+    "tagBorder": "border-green-200"
   },
   {
     "id": 6,
@@ -57,7 +72,10 @@
     "category": "Database",
     "level": "Intermediate",
     "rating": 4.9,
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "tagBg": "bg-blue-50",
+    "tagText": "text-blue-600",
+    "tagBorder": "border-blue-200"
   },
   {
     "id": 7,
@@ -67,7 +85,10 @@
     "category": "Database",
     "level": "Intermediate",
     "rating": 4.8,
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    "tagBg": "bg-red-50",
+    "tagText": "text-red-600",
+    "tagBorder": "border-red-200"
   },
   {
     "id": 8,
@@ -77,7 +98,10 @@
     "category": "Language",
     "level": "Beginner-Friendly",
     "rating": 4.9,
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "tagBg": "bg-yellow-50",
+    "tagText": "text-yellow-700",
+    "tagBorder": "border-yellow-200"
   },
   {
     "id": 9,
@@ -87,7 +111,10 @@
     "category": "Language",
     "level": "Intermediate",
     "rating": 4.9,
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "tagBg": "bg-blue-50",
+    "tagText": "text-blue-700",
+    "tagBorder": "border-blue-200"
   },
   {
     "id": 10,
@@ -97,7 +124,10 @@
     "category": "Language",
     "level": "Intermediate",
     "rating": 4.6,
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    "tagBg": "bg-rose-50",
+    "tagText": "text-rose-600",
+    "tagBorder": "border-rose-200"
   },
   {
     "id": 11,
@@ -107,7 +137,10 @@
     "category": "Styling",
     "level": "Beginner-Friendly",
     "rating": 4.9,
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+    "tagBg": "bg-cyan-50",
+    "tagText": "text-cyan-600",
+    "tagBorder": "border-cyan-200"
   },
   {
     "id": 12,
@@ -117,6 +150,9 @@
     "category": "DevOps",
     "level": "Intermediate",
     "rating": 4.9,
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    "tagBg": "bg-indigo-50",
+    "tagText": "text-indigo-600",
+    "tagBorder": "border-indigo-200"
   }
 ]

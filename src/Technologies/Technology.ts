@@ -7,6 +7,9 @@
     level: string,
     rating: number,
     icon:string;
+    tagBg: string;
+    tagText: string;
+    tagBorder: string;
  }
 
  

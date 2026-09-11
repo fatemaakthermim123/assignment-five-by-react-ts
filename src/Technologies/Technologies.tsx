@@ -1,17 +1,20 @@
 import { use } from "react";
 import type { TechnologyProps } from "./Technology";
+import AvailableTechnologies from "./AvailableTechnologies";
 
 
 interface TechnologiesProps{
-  TechnologiesPromise:Promise<TechnologyProps[]>;
+  technologiesPromise:Promise<TechnologyProps[]>;
 
 }
  
- const Technologies = ({TechnologiesPromise}:TechnologiesProps) => {
-  const Technologies= use(TechnologiesPromise);
-  console.log(Technologies)
+ const Technologies = ({technologiesPromise}:TechnologiesProps) => {
+  const technologies= use(technologiesPromise);
+  
    return (
      <div>
+        
+          <AvailableTechnologies technologies={technologies}></AvailableTechnologies>
         
      </div>
    );

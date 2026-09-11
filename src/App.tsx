@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import Banner from "./Banner/Banner"
 import Navbar from "./Navbar/Navbar"
 import type { TechnologyProps } from "./Technologies/Technology";
@@ -17,7 +17,9 @@ function App() {
    return (<>
     <Navbar></Navbar>
     <Banner></Banner>
-    <Technologies TechnologiesPromise={TechnologiesPromise}></Technologies>
+    <Suspense fallback={<p>Loading..........</p>}>
+    <Technologies technologiesPromise={TechnologiesPromise}></Technologies>
+    </Suspense>
     </>
   )
 }
