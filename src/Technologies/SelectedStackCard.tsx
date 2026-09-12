@@ -1,6 +1,7 @@
 import { RxCross1 } from "react-icons/rx";
 import type { TechnologyProps } from "./Technology";
 import type { Dispatch, SetStateAction } from "react";
+import { Bounce, toast } from "react-toastify";
 
 interface SelectedStackCardProps {
   technology:TechnologyProps,
@@ -10,7 +11,23 @@ interface SelectedStackCardProps {
 
 const SelectedStackCard = ({technology,selectedStacks,setSelectedStacks}: SelectedStackCardProps) => {
  
- 
+    const handleStackRemove=(technology:TechnologyProps)=>{
+      const restTechnology=selectedStacks.filter(tech=>tech.id!==technology.id);
+      setSelectedStacks(restTechnology);
+
+       toast.error(`${technology.name} is removed from stack`, {
+position: "bottom-right",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+transition: Bounce,
+});
+    }
+
  
  
  
@@ -25,13 +42,13 @@ const SelectedStackCard = ({technology,selectedStacks,setSelectedStacks}: Select
          <img className="w-6 h-6" src={technology.icon}/>
         <div>
             <h1 className="font-semibold text-sm">{technology.name}</h1>
-            <p className="text-xs text-gray-500">{technology.tag}</p>
+            <p className="text-xs text-gray-500">{technology.badge}</p>
         </div>
 
 
        </div>
-       <div>
-          <RxCross1 />
+       <div><span onClick={()=>handleStackRemove(technology)}>
+          <RxCross1 /></span>
         </div>
       </div>
 

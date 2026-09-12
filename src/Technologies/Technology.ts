@@ -1,15 +1,15 @@
   export interface TechnologyProps {
     id: number,
     name: string,
-    tag: string,
+    badge: string,
     description:string,
     category: string,
-    level: string,
+    difficulty: string,
     rating: number,
     icon:string;
-    tagBg: string;
-    tagText: string;
-    tagBorder: string;
+    badgeBg: string;
+    badgeText: string;
+    badgeBorder: string;
  }
 
  

@@ -25,7 +25,7 @@ interface TechnologiesProps{
 
           <div className="col-span-3">
             
-            <SelectedStack technologies={technologies}  selectedStacks={selectedStacks}
+            <SelectedStack   selectedStacks={selectedStacks}
           setSelectedStacks={setSelectedStacks}></SelectedStack>
 
           </div>

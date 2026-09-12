@@ -1,6 +1,6 @@
 import { BsStarFill } from "react-icons/bs";
 import type { TechnologyProps } from "./Technology";
-import type { Dispatch, SetStateAction } from "react";
+import {  type Dispatch, type SetStateAction } from "react";
 import { Bounce, toast } from "react-toastify";
 
  interface AvailableTechnologyCardProps {
@@ -10,10 +10,16 @@ import { Bounce, toast } from "react-toastify";
     }
  
  const AvailableTechnologyCard = ({availableTecnology,selectedStacks,setSelectedStacks}: AvailableTechnologyCardProps) => {
-   
+   const matched = selectedStacks.filter(tech => tech.id === availableTecnology.id);
+const isAdded = matched.length > 0;
+
+  
   const handleStackBtn=()=>{
+
+    
     setSelectedStacks([...selectedStacks,availableTecnology])
-    toast.success(' Added to stack successfully', {
+    
+   toast.success(`${availableTecnology.name} is added to stack successfully`, {
 position: "bottom-right",
 autoClose: 5000,
 hideProgressBar: false,
@@ -24,19 +30,21 @@ progress: undefined,
 theme: "light",
 transition: Bounce,
 });
+
   }
   
   
   return (
 
- <div className="card w-75  bg-base-100 card-lg shadow-sm p-5 flex flex-col mt-8">
+ <div className={`card w-80  bg-base-100 card-lg shadow-sm p-5 
+ flex flex-col mt-8 ${isAdded===false?'border border-gray-300 hover:scale-105 transition duration-200 ':'border border-red-500'} `}>
 
      <div className="flex justify-between items-center mb-3">
       <img className="w-12 h-12" src={availableTecnology.icon}/>
         <p className={`px-3 py-2 border rounded-full 
-        text-xs font-medium ${availableTecnology.tagBg} 
-        ${availableTecnology.tagBorder} ${availableTecnology.tagText}`}>
-            {availableTecnology.tag}
+        text-xs font-medium ${availableTecnology.badgeBg} 
+        ${availableTecnology.badgeBorder} ${availableTecnology.badgeText}`}>
+            {availableTecnology.badge}
         </p>
         </div>
 
@@ -49,11 +57,12 @@ transition: Bounce,
 
     <div className="flex text-gray-500 justify-between mb-3">
       <p>{availableTecnology.category}</p>
-      <p>{availableTecnology.level}</p>
+      <p>{availableTecnology.difficulty}</p>
       <p className="flex items-center"><BsStarFill className="text-yellow-500" />{availableTecnology.rating}</p>
     </div>
-    <button onClick={handleStackBtn} className="btn bg-black text-white border-black rounded-xl hover:scale-105 transition duration-200">
-  Add to Stack
+    <button disabled={isAdded} onClick={handleStackBtn} className={`btn ${isAdded===false?'btn bg-black text-white border':
+      'btn-outline btn-error'} rounded-xl hover:scale-105 transition duration-200`}>
+ {isAdded?'added to stack':'Add to Stack'} 
 </button>
   </div>
   

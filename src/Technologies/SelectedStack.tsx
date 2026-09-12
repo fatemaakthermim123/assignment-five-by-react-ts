@@ -1,6 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import SelectedStackCard from "./SelectedStackCard";
 import type { TechnologyProps } from "./Technology";
+import { Bounce, toast } from "react-toastify";
 
  interface SelectedStackProps {
    
@@ -10,9 +11,22 @@ import type { TechnologyProps } from "./Technology";
  
  const SelectedStack = ({selectedStacks,setSelectedStacks}: SelectedStackProps) => {
     
-
+  const handleAllPlayerRemover=()=>{
+    setSelectedStacks([]);
+     toast.error(' Removed all technologies from stack', {
+position: "bottom-right",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+transition: Bounce,
+});
+  }
    return (
-     <div className="border border-gray-300 shadow-xs rounded-2xl py-5">
+     <div className="border border-gray-300 shadow-xs rounded-2xl py-5 mt-25">
       <div>
        <p className="ml-10 mb-2 font-bold">Your Stack</p>
         <p className="text-gray-500 ml-10 mb-4">{selectedStacks.length===0?
@@ -35,7 +49,7 @@ import type { TechnologyProps } from "./Technology";
         } 
         </div>
       {selectedStacks.length!==0?(<div>
-       <button className="btn btn-outline btn-error w-70 ml-10 rounded-2xl mt-2 ">Remove All</button>
+       <button onClick={handleAllPlayerRemover} className="btn btn-outline btn-error w-70 ml-10 rounded-2xl mt-2 ">Remove All</button>
      </div>):''}
      </div>
    );
