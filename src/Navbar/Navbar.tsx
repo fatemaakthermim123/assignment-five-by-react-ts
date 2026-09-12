@@ -3,7 +3,7 @@ import navLogo from "../assets/logo-text.png"
 const Navbar = () => {
     return (
         <nav className='sticky top-0 z-50 bg-white'>
-           <div className='flex justify-between max-w-6xl mx-auto '>
+           <div className='flex justify-between container mx-auto '>
 
             <div className='flex gap-3 items-center'>
                 <img src={navLogo}/>

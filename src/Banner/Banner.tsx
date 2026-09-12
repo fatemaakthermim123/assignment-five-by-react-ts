@@ -2,7 +2,7 @@
  import bannerLogo from "../assets/banner-stack.png"
  const Banner = () => {
     return (
-        <div className='flex justify-between items-center max-w-6xl mx-auto'>
+        <div className='flex justify-between items-center container mx-auto'>
             {/* leftside */}
     <div className=''>
          <h1 className='mb-7 font-extrabold text-4xl'>Build Your Ideal<br/>
