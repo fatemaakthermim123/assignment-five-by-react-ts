@@ -1,10 +1,10 @@
- import React from 'react';
+
  import bannerLogo from "../assets/banner-stack.png"
  const Banner = () => {
     return (
-        <div className='flex justify-between items-center container mx-auto'>
+        <div className='grid grid-cols-1 md:flex justify-center md:justify-between items-center container mx-auto'>
             {/* leftside */}
-    <div className=''>
+    <div >
          <h1 className='mb-7 font-extrabold text-4xl'>Build Your Ideal<br/>
           <span className='bg-linear-to-r  from-[#FF5722] to-[#7C3AED] 
           bg-clip-text text-transparent'>Development Stack</span></h1>
@@ -22,7 +22,7 @@
             </div>
                  {/* rightside */}
      <div>
-          <img className='' src={bannerLogo}/>
+          <img className='' src={bannerLogo} alt='BannerLogo'/>
      </div>
 
         </div>

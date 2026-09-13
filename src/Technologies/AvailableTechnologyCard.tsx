@@ -36,7 +36,7 @@ transition: Bounce,
   
   return (
 
- <div className={`card w-80  bg-base-100 card-lg shadow-sm p-5 
+ <div className={`card w-full md:w-80  bg-base-100 card-lg shadow-sm p-5 
  flex flex-col mt-8 ${isAdded===false?'border border-gray-300 hover:scale-105 transition duration-200 ':'border border-red-500'} `}>
 
      <div className="flex justify-between items-center mb-3">
@@ -62,7 +62,7 @@ transition: Bounce,
     </div>
     <button disabled={isAdded} onClick={handleStackBtn} className={`btn ${isAdded===false?'btn bg-black text-white border':
       'btn-outline btn-error'} rounded-xl hover:scale-105 transition duration-200`}>
- {isAdded?'added to stack':'Add to Stack'} 
+ {isAdded?'✓ Added to Stack':'Add to Stack'} 
 </button>
   </div>
   

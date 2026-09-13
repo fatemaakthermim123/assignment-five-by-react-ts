@@ -15,15 +15,15 @@ interface TechnologiesProps{
   const [selectedStacks, setSelectedStacks]=useState<TechnologyProps[]>([]);
   
    return (
-    <div className="container mx-auto">
-     <div className=" grid grid-cols-12 gap-4">
-        <div className="col-span-9">
+    <div className=" w-full md:container mx-auto">
+     <div className=" grid grid-cols-1 md:grid-cols-12 gap-4">
+        <div className=" md:col-span-9">
           <AvailableTechnologies  technologies={technologies} selectedStacks={selectedStacks}
           setSelectedStacks={setSelectedStacks}></AvailableTechnologies>
         </div>
           
 
-          <div className="col-span-3">
+          <div className=" md:col-span-3">
             
             <SelectedStack   selectedStacks={selectedStacks}
           setSelectedStacks={setSelectedStacks}></SelectedStack>
